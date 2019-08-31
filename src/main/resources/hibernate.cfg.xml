@@ -22,5 +22,8 @@
         <mapping class="sda.hibernate.entity.przyklad4.Produkt4"/>
         <mapping class="sda.hibernate.entity.przyklad4.Telefon4"/>
         <mapping class="sda.hibernate.entity.przyklad4.Samochod4"/>
+        <mapping class="sda.hibernate.zadania.entity.Firma"/>
+        <mapping class="sda.hibernate.zadania.entity.Klient"/>
+        <mapping class="sda.hibernate.zadania.entity.Pracownik"/>
     </session-factory>
 </hibernate-configuration>

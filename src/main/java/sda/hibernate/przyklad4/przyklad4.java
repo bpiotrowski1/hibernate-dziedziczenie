@@ -5,6 +5,7 @@ package sda.hibernate.przyklad4;
 
 import org.hibernate.Session;
 import sda.hibernate.HibernateUtil;
+import sda.hibernate.entity.przyklad4.Produkt4;
 import sda.hibernate.entity.przyklad4.Samochod4;
 import sda.hibernate.entity.przyklad4.Telefon4;
 
@@ -28,8 +29,8 @@ public class przyklad4 {
         session.flush();
         session.close();
 
-/*        session = HibernateUtil.getSessionFactory().openSession();
-        session.createQuery("FROM Produkt4",Produkt4.class).getResultList().get(0);
-        session.close();*/
+        session = HibernateUtil.getSessionFactory().openSession();
+        session.createQuery("FROM Produkt4", Produkt4.class).getResultList().get(0);
+        session.close();
     }
 }
